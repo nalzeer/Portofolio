@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>UdaciFeeds</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="UdaciFeeds_files/css.css">
+        <link rel="stylesheet" href="UdaciFeeds_files/normalize.css">
+        <link rel="stylesheet" href="UdaciFeeds_files/icomoon.css">
+        <link rel="stylesheet" href="UdaciFeeds_files/style.css">
+
+        <link rel="stylesheet" href="UdaciFeeds_files/jasmine.css">
+
+        <script src="UdaciFeeds_files/jasmine.js"></script>
+        <script src="UdaciFeeds_files/jasmine-html.js"></script>
+        <script src="UdaciFeeds_files/boot.js"></script>
+    </head>
+    <body class="menu-hidden">
+        <div class="header">
+            <a href="#" class="menu-icon-link">
+                <i class="icon-list"></i>
+            </a>
+
+            <h1 class="header-title">CSS Tricks</h1>
+        </div>
+
+        <div class="slide-menu">
+            <ul class="feed-list">
+            <li>
+                <a href="#" data-id="0">Udacity Blog</a>
+            </li>
+        
+            <li>
+                <a href="#" data-id="1">CSS Tricks</a>
+            </li>
+        
+            <li>
+                <a href="#" data-id="2">HTML5 Rocks</a>
+            </li>
+        
+            <li>
+                <a href="#" data-id="3">Linear Digressions</a>
+            </li>
+        </ul>
+        </div>
+
+        <div class="feed">
+            <a class="entry-link" href="http://css-blocks.com/">
+                <article class="entry">
+                    <h2>CSS Blocks</h2>
+                    <p></p>
+                </article>
+            </a>
+        
+            <a class="entry-link" href="https://css-tricks.com/radial-gradient-recipes/">
+                <article class="entry">
+                    <h2>Radial Gradient Recipes</h2>
+                    <p></p>
+                </article>
+            </a>
+        
+            <a class="entry-link" href="https://synd.co/2EIJ9KA">
+                <article class="entry">
+                    <h2>​Level Up Your JavaScript Error Monitoring</h2>
+                    <p></p>
+                </article>
+            </a>
+        
+            <a class="entry-link" href="https://css-tricks.com/understanding-react-setstate/">
+                <article class="entry">
+                    <h2>Understanding React `setState`</h2>
+                    <p></p>
+                </article>
+            </a>
+        
+            <a class="entry-link" href="http://www.gridtoflex.com/">
+                <article class="entry">
+                    <h2>Grid to Flex</h2>
+                    <p></p>
+                </article>
+            </a>
+        
+            <a class="entry-link" href="https://css-tricks.com/jamstack-comments/">
+                <article class="entry">
+                    <h2>JAMstack Comments</h2>
+                    <p></p>
+                </article>
+            </a>
+        
+            <a class="entry-link" href="https://css-tricks.com/server-side-visualization-with-nightmare/">
+                <article class="entry">
+                    <h2>Server-Side Visualization With Nightmare</h2>
+                    <p></p>
+                </article>
+            </a>
+        
+            <a class="entry-link" href="https://css-tricks.com/native-like-animations-for-page-transitions-on-the-web/">
+                <article class="entry">
+                    <h2>Native-Like Animations for Page Transitions on the Web</h2>
+                    <p></p>
+                </article>
+            </a>
+        
+            <a class="entry-link" href="https://css-tricks.com/choosing-a-responsive-email-framework%e2%80%8amjml-vs-foundation-for-emails/">
+                <article class="entry">
+                    <h2>Choosing a Responsive Email Framework: MJML vs. Foundation for Emails</h2>
+                    <p></p>
+                </article>
+            </a>
+        
+            <a class="entry-link" href="https://css-tricks.com/what-are-higher-order-components-in-react/">
+                <article class="entry">
+                    <h2>What are Higher-Order Components in React?</h2>
+                    <p></p>
+                </article>
+            </a>
+        </div>
+
+        <script class="tpl-entry" type="text/x-handlebars-template">
+            <a class="entry-link" href="{{link}}">
+                <article class="entry">
+                    <h2>{{title}}</h2>
+                    <p>{{contentSnippet}}</p>
+                </article>
+            </a>
+        </script>
+
+        <script class="tpl-feed-list-item" type="text/x-handlebars-template">
+            <li>
+                <a href="#" data-id="{{id}}">{{name}}</a>
+            </li>
+        </script>
+
+        <script src="UdaciFeeds_files/jquery.js"></script>
+        <script src="UdaciFeeds_files/handlebars.js"></script>
+        <script src="UdaciFeeds_files/jsapi.js"></script>
+        <script src="UdaciFeeds_files/app.js"></script>
+
+        <script src="UdaciFeeds_files/feedreader.js"></script>
+    
+
+<div class="jasmine_html-reporter failure-list"><div class="banner"><a class="title" href="http://jasmine.github.io/" target="_blank"></a><span class="version">2.1.2</span><span class="duration">finished in 3.844s</span></div><ul class="symbol-summary"><li class="passed" id="spec_spec0" title="RSS Feeds are defined"></li><li class="passed" id="spec_spec1" title="RSS Feeds feedUrl defined"></li><li class="passed" id="spec_spec2" title="RSS Feeds feedName defined"></li><li class="passed" id="spec_spec3" title="The menu element is hidden by default"></li><li class="passed" id="spec_spec4" title="The menu changes when the menu icon clicked"></li><li class="failed" id="spec_spec5" title="Initial Entries there is at least a single .entry element within the .feed container"></li><li class="passed" id="spec_spec6" title="New Feed Selection the content actually changes"></li></ul><div class="alert"><span class="exceptions"><label class="label" for="raise-exceptions">raise exceptions</label><input class="raise" id="raise-exceptions" type="checkbox"></span><span class="bar failed">7 specs, 1 failure</span><span class="menu bar spec-list"><span>Spec List | </span><a class="failures-menu" href="#">Failures</a></span><span class="menu bar failure-list"><a class="spec-list-menu" href="#">Spec List</a><span> | Failures </span></span></div><div class="results"><div class="failures"><div class="spec-detail failed"><div class="description"><a title="Initial Entries there is at least a single .entry element within the .feed container" href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=Initial%20Entries%20there%20is%20at%20least%20a%20single%20.entry%20element%20within%20the%20.feed%20container">Initial Entries there is at least a single .entry element within the .feed container</a></div><div class="messages"><div class="result-message">TypeError: allFeeds[id] is undefined in file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/js/app.js (line 44)</div><div class="stack-trace">loadFeed@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/js/app.js:44:10
+@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/spec/feedreader.js:87:13
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Suite.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2056:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2068:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:330:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:330:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Suite.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2056:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2068:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:330:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:330:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:330:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Suite.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2056:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Suite.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2056:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:605:73
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Env/this.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:612:7
+window.onload@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/boot.js:109:5
+</div><div class="result-message">Expected 0 to be greater than 0.</div><div class="stack-trace">stack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1442:17
+buildExpectationResult@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1419:14
+expectationResultFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:533:18
+Spec.prototype.addExpectationResult@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:293:29
+addExpectationResult@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:477:16
+Expectation.prototype.wrapCompare/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1371:7
+@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/spec/feedreader.js:93:13
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1793:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Suite.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2056:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2068:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:330:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:330:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Suite.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2056:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2068:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:330:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:330:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+attemptAsync/next&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1772:11
+once/&lt;@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1717:9
+complete@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:330:9
+clearStack@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:555:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1755:7
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Spec.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:318:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Suite.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2056:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2073:37
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Suite.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:2056:5
+fn@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:605:73
+attemptAsync@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1790:9
+QueueRunner.prototype.run@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1746:16
+QueueRunner.prototype.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:1734:5
+queueRunnerFactory@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:569:7
+Env/this.execute@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/jasmine.js:612:7
+window.onload@file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/jasmine/lib/jasmine-2.1.2/boot.js:109:5
+</div></div></div></div><div class="summary"><ul class="suite" id="suite-suite0"><li class="suite-detail"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=Jasmine__TopLevel__Suite">Jasmine__TopLevel__Suite</a></li><ul class="suite" id="suite-suite1"><li class="suite-detail"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=RSS%20Feeds">RSS Feeds</a></li><ul class="specs"><li class="passed" id="spec-spec0"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=RSS%20Feeds%20are%20defined">are defined</a></li></ul><ul class="specs"><li class="passed" id="spec-spec1"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=RSS%20Feeds%20feedUrl%20defined">feedUrl defined</a></li></ul><ul class="specs"><li class="passed" id="spec-spec2"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=RSS%20Feeds%20feedName%20defined">feedName defined</a></li></ul></ul><ul class="suite" id="suite-suite2"><li class="suite-detail"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=The%20menu">The menu</a></li><ul class="specs"><li class="passed" id="spec-spec3"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=The%20menu%20element%20is%20hidden%20by%20default">element is hidden by default</a></li></ul><ul class="specs"><li class="passed" id="spec-spec4"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=The%20menu%20changes%20when%20the%20menu%20icon%20clicked">changes when the menu icon clicked</a></li></ul></ul><ul class="suite" id="suite-suite3"><li class="suite-detail"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=Initial%20Entries">Initial Entries</a></li><ul class="specs"><li class="failed" id="spec-spec5"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=Initial%20Entries%20there%20is%20at%20least%20a%20single%20.entry%20element%20within%20the%20.feed%20container">there is at least a single .entry element within the .feed container</a></li></ul></ul><ul class="suite" id="suite-suite4"><li class="suite-detail"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=New%20Feed%20Selection">New Feed Selection</a></li><ul class="specs"><li class="passed" id="spec-spec6"><a href="file:///Users/Apple/Desktop/frontend-nanodegree-feedreader-master/index.html?spec=New%20Feed%20Selection%20the%20content%20actually%20changes">the content actually changes</a></li></ul></ul></ul></div></div></div></body></html>

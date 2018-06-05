@@ -1,0 +1,30 @@
+.headerLine{
+  display: gray;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+}
+
+.name{
+  padding-top: 60px;
+}
+
+.img{
+  width: 100%;
+  height: auto;
+}
+
+.hobby{
+  color: #5c8a8a;
+}
+
+.link{
+  color: #ffccb3;
+}
+
+.footer{
+  color: lightgrey;
+}
